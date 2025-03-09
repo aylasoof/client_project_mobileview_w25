@@ -1,0 +1,529 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  margin: 10px;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #00274C;
+  color: white;
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+header img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ffffff;
+}
+
+footer{
+  background: #FFCB05;
+  padding: 20px 5px 10px;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  padding: 8px;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: left;
+  padding: 15px 0 8px 15px;
+  color: #0f3462;
+  line-height: 120%;
+}
+
+h3 {
+  font-size: 18px;
+  text-align: left;
+  padding: 8px 0 8px 15px;
+}
+
+h4 {
+  font-size: 14px;
+  text-align: left;
+  padding: 8px 0 8px 15px;
+  line-height: 120%;
+}
+
+p {
+  font-size: 14px;
+  padding: 5px 15px;
+  line-height: 1.3;
+}
+
+nav {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px;
+  list-style: none;
+  flex-direction: column;
+}
+
+nav ul a {
+  display: inline-block;
+  padding: 12px 20px;
+  color: #FFCB05;
+  font-size: 16px;
+  text-decoration: underline;
+  border-radius: 8px;
+}
+
+nav ul a.active{
+  color: #00274c;
+  background-color: #ffcb05;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.skip a {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+
+.skip a:focus {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+*:focus {
+  border: solid 2px #ffcb05;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding: 10px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#MentalHealth, #AcademicResources, #CommunityBuilding {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#Welcome p {
+  margin: 0;
+  padding: 0 0 10px 15px;
+}
+
+#Welcome h2{
+  padding: 10px 5px 0px 15px;
+}
+
+#Welcome ol{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+#Welcome ol li{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #00274C;
+  list-style-type: none;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 125%;
+  color: #ffffff;
+}
+
+#Welcome ol li a{
+  color: #ffffff;
+}
+
+#Welcome p:nth-child(3){
+  padding: 0 15px;
+}
+
+#MHIntro p{
+  padding: 15px;
+}
+
+#MHIntro h2{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #00274C;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+#MHIntro a{
+  color: #ffffff;
+}
+
+#CAPS ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+#CAPS ul li{
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#CAPS ul li a{
+  color: #ffffff;
+  line-height: 125%;
+}
+
+#CAPS ul li:first-child{
+  background-color: #2F65A7;
+}
+
+#CAPS ul li:nth-child(2){
+  background-color: #9A3324;
+}
+
+#CAPS ul li:last-child{
+  background-color: #702082;
+}
+
+#CAPS p:first-of-type{
+  padding: 0px 15px 0px 15px;
+}
+
+#CAPS h3:first-of-type{
+  padding: 10px 0 0 15px;
+}
+
+#CAPS h4{
+  padding: 10px 0 0 15px;
+}
+
+#CAPS p{
+  padding: 0 15px 10px 15px;
+}
+
+#CAPS-Contact-Hours{
+  background: #00274C;
+  color: #ffffff;
+}
+
+#CAPS-Contact-Hours a{
+  color: #FFCB05;
+}
+
+#WolverineWellness h3{
+  padding: 8px 0 0 15px;
+}
+
+#WolverineWellness ol{
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+#WolverineWellness li{
+  padding: 10px;
+}
+
+#WolverineWellness li::marker{
+  color: #0f3462;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#WolverineWellness-Contact{
+  background: #00274C;
+  color: #ffffff;
+}
+
+#WolverineWellness-Contact a{
+  color: #FFCB05;
+}
+
+#WolverineWellness h3:nth-of-type(2):has(a){
+  background: #FFCB05;
+  padding: 15px 5px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#WolverineWellness h3:nth-of-type(2):has(a) a{
+  color: #00274C;
+  font-size: 16px;
+}
+
+#CAPSPeerCounseling h3{
+  padding: 8px 0 0 15px;
+}
+
+#CAPSPeerCounseling h4{
+  padding: 10px 0 0 15px;
+}
+
+#CAPSPeerCounseling ul{
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  padding: 5px 5px 10px 5px;
+  gap: 10px;
+  align-items: center;
+}
+
+#CAPSPeerCounseling ul li{
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#CAPSPeerCounseling ul li:first-child{
+  background-color: #2F65A7;
+}
+
+#CAPSPeerCounseling ul li:last-child{
+  background-color: #702082;
+}
+
+#CAPSPeerCounseling ul li a{
+  color: #ffffff;
+}
+
+#PeerCounseling-Contact-Hours{
+  background: #00274C;
+  color: #ffffff;
+}
+
+#PeerCounseling-Contact-Hours a{
+  color: #FFCB05;
+}
+
+#ARIntro p:first-of-type{
+  padding: 0px 15px 10px;
+}
+
+#ARIntro ol{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+#ARIntro ol li{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #00274C;
+  list-style-type: none;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+#ARIntro ol li a{
+  color: #ffffff;
+}
+
+#AcademicAdvising ul:first-of-type{
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  padding: 5px 5px 10px 5px;
+  gap: 10px;
+  align-items: center;
+}
+
+#AcademicAdvising ul li:first-of-type:has(a){
+  background-color: #2F65A7;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#AcademicAdvising ul li:last-of-type:has(a){
+  background-color: #702082;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#AcademicAdvising ul li a{
+  color: #ffffff;
+}
+
+#AcademicAdvising h3{
+  padding: 8px 0 0 15px;
+}
+
+#AcademicAdvising h4{
+  padding: 10px 0 0 15px;
+}
+
+#AcademicAdvising ul{
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+#AcademicAdvising ul li{
+  padding: 5px;
+  font-size: 14px;
+  color: #0f3462;
+}
+
+#AAContact-Hours{
+  background: #00274C;
+  color: #ffffff;
+}
+
+#AAContact-Hours a{
+  color: #FFCB05;
+}
+
+#UMLibraryContact{
+  gap:5px;
+}
+
+#UMLibraryContact ul{
+  list-style-type: disc;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+
+#UMLibraryContact ul li{
+  padding: 5px;
+  font-size: 16px;
+}
+
+#Hatcher{
+  border-top: 1px solid #00274C;
+}
+
+#Hatcher, #Shapiro, #AAE, #Taubman{
+  border-bottom: 1px solid #00274C;
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+#SCW-Contact-Hours{
+  background: #00274C;
+  color: #ffffff;
+}
+
+#SCW-Contact-Hours a{
+  color: #FFCB05;
+}
+
+#SSD-Contact-Hours{
+  background: #00274C;
+  color: #ffffff;
+}
+
+#SSD-Contact-Hours a{
+  color: #FFCB05;
+}
+
+#StudentLifeIntro ol{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+#StudentLifeIntro ol li{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #00274C;
+  list-style-type: none;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+#StudentLifeIntro ol li a{
+  color: #ffffff;
+}
+
+#StudentLifeIntro p{
+  padding: 0px 15px 10px;
+}
+#StudentLifeIntro h2{
+  padding: 10px 0 0 15px;
+}
+
+#CCI p{
+  padding: 0px 15px 10px;
+}
+#CCI h4{
+  padding: 10px 0 0 15px;
+}
+
+#CCI-Contact-Hours{
+  background: #00274C;
+  color: #ffffff;
+}
+
+#CCI-Contact-Hours a{
+  color: #FFCB05;
+}
+
+#Studentlife h4{
+  font-size: 16px;
+}
+
+#Studentlife p:nth-child(2n+1){
+  padding: 0px 15px 10px;
+}
+
+#Studentlife p{
+  padding: 0 15px;
+}
+
+#Intramural h4{
+  color: #0f3462;
+}
